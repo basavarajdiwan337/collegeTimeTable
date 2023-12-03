@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">TimeTable</string>
+    <string name="title_activity_splashscreen">Splashscreen</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_add_student_details">AddStudentDetails</string>
+    <string name="title_activity_saved_drafts">SavedDrafts</string>
+    <string name="title_activity_generate_time_table">GenerateTimeTable</string>
+
+    <string-array name="arryearlst">
+        <item>Select</item>
+        <item>2019-20</item>
+        <item>2020-21</item>
+        <item>2021-22</item>
+        <item>2022-23</item>
+        <item>2023-24</item>
+        <item>2024-25</item>
+
+    </string-array>
+
+    <string-array name="arryear">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+
+    <string-array name="arrscheme">
+        <item>Select</item>
+        <item>Odd</item>
+        <item>Even</item>
+
+    </string-array>
+
+
+    <string-array name="arrdept">
+        <item>Select</item>
+        <item>EC</item>
+        <item>CSE</item>
+        <item>ISE</item>
+        <item>Civil</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="arrsem">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="arrdiv">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="arrsub">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="arrdraftone">
+        <item>Select</item>
+        <item>2020-21 - Even</item>
+        <item>2020-21 - Odd</item>
+        <item>2019-20 - Even</item>
+        <item>2019-20 - Odd</item>
+    </string-array>
+
+    <string-array name="faculties">
+        <item>Select</item>
+        <item>Dr. Pagi</item>
+        <item>Dr. Hattore</item>
+        <item>Prof. Benkikeri</item>
+        <item>Prof. Prashanth M</item>
+        <item>Prof. Smitha K</item>
+        <item>Prof. Madannavar</item>
+        <item>Prof. S V Hanji</item>
+        <item>Prof. Jayashree</item>
+        <item>Prof. V H Naik</item>
+        <item>Prof. Praveen S C</item>
+    </string-array>
+
+    <string-array name="subjnames">
+        <item>Python</item>
+        <item>System Software</item>
+        <item>FAFL</item>
+        <item>ADA</item>
+        <item>DC</item>
+        <item>AI</item>
+        <item>System Software Lab</item>
+        <item>Operative System Lab</item>
+        <item>ADA Lab</item>
+        <item>Python Lab</item>
+        <item>CNS</item>
+        <item>IOT</item>
+        <item>BCTW</item>
+        <item>OOMD</item>
+        <item>WT</item>
+        <item>MCS</item>
+        <item>OOMD Lab</item>
+        <item>WT Lab</item>
+    </string-array>
+
+    <string-array name="sessions">
+        <item>Select</item>
+        <item>Morning</item>
+        <item>Afternoon</item>
+    </string-array>
+
+<string-array name="arrtime">
+    <item>Select</item>
+    <item>8-9</item>
+    <item>9-10</item>
+    <item>10-11</item>
+    <item>11-12</item>
+    <item>12-1</item>
+    <item>1-2</item>
+    <item>3-4</item>
+    <item>4-5</item>
+
+</string-array>
+
+</resources>

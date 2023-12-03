@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Lecture Hours" />
+
+            <Spinner
+                android:id="@+id/spnLec"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/arryear" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tutorial Hour" />
+
+            <Spinner
+                android:id="@+id/spnScheme"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/arryear"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Practical Hour" />
+
+            <Spinner
+                android:id="@+id/spnPrac"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/arryear" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Subject" />
+
+            <Spinner
+                android:id="@+id/spnSub"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/subjnames" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Credits" />
+
+            <Spinner
+                android:id="@+id/spnCredits"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/arryear" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Faculty Div A" />
+
+            <Spinner
+                android:id="@+id/spnDivA"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/faculties" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Faculty Div B" />
+
+            <Spinner
+                android:id="@+id/spnDivB"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/faculties" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn"
+                android:gravity="center"
+                android:text="Update Record"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

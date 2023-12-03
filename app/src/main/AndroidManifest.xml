@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.proj.timetable">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name= "android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name= "android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TimeTable">
+
+
+        <activity
+            android:name=".SavedDrafts"
+            android:label="@string/title_activity_saved_drafts">
+            <intent-filter>
+                <action android:name="com.proj.timetable.SavedDrafts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainPage"
+            android:label="@string/title_activity_main_page">
+            <intent-filter>
+                <action android:name="com.proj.timetable.MainPage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register">
+            <intent-filter>
+                <action android:name="com.proj.timetable.RegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddDetails"
+            android:label="Add Details">
+            <intent-filter>
+                <action android:name="com.proj.timetable.AddDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddTTDetails"
+            android:label="Add Time Table Details">
+            <intent-filter>
+                <action android:name="com.proj.timetable.AddTTDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GenerateTimeTable"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.GenerateTimeTable" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UpdateSingleRecords"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.UpdateSingleRecords" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CreateFixedSlot"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.CreateFixedSlot" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DeleteDetails"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.DeleteDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ViewDrafts"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.ViewDrafts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".CreatePdf"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.CreatePdf" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".GeneratedTimeTable"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.GeneratedTimeTable" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".CreateTimeTablePDF"
+            android:label="Generate Time Table">
+            <intent-filter>
+                <action android:name="com.proj.timetable.CreateTimeTablePDF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

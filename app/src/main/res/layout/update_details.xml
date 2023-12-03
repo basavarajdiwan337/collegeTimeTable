@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dip"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="horizontal|vertical">
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:scrollbars="horizontal|vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="100dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TableRow
+                    android:background="#0079D6"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="4"
+                        android:text="Department : CSE" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="3"
+                        android:text="Semester : 3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:text="Lecture Hour" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:text="Tutorial Hour" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:text="Practical Hour" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="4"
+                        android:layout_weight="1"
+                        android:text="Credits" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="5"
+                        android:layout_weight="1"
+                        android:text="Subjects" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="6"
+                        android:layout_weight="1"
+                        android:text="Faculty A Div" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="7"
+                        android:layout_weight="1"
+                        android:text="Faculty B Div" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="7"
+                        android:layout_weight="1"
+                        android:text="Edit" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="7"
+                        android:layout_weight="1"
+                        android:text="Delete" android:visibility="gone" />
+                </TableRow>
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        
+                        android:id="@+id/spnLecHour1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+
+                    android:background="#DAE8FC"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/spnLecHour15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnTutorHour15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnPracHour15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnCredit15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnSub15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivA15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/spnFacDivB15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnUpdate15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Update" android:visibility="gone"
+                        />
+                    <Button
+                        android:id="@+id/btnDelet15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn"
+                        android:text="Delete" android:visibility="gone"
+                        />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
